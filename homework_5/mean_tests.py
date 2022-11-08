@@ -6,7 +6,7 @@ import argparse
 
 
 def check_intervals_intersect(first_ci, second_ci):
-    if min(first_ci[1], second_ci[1]) - max(first_ci[0], second_ci[0]) <= 0:
+    return (min(first_ci[1], second_ci[1]) - max(first_ci[0], second_ci[0]) <= 0)
         return False
     else:
         return True
