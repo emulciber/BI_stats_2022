@@ -90,6 +90,6 @@ if __name__ == "__main__":
     results = get_pandas_dataframe(first_table, second_table)
 
     if args.adjust:
-        results = correct_p_values(results, method = args.adjust)
+        results = correct_p_values(results, method=args.adjust)
         
     results.to_csv(args.save_results_table, index=False)
